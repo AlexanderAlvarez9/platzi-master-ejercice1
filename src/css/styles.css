@@ -1,0 +1,167 @@
+/* css reset */
+html {
+    /* box-sizing: border-box; */
+    font-size: 16px;
+}
+
+body,
+p,
+ol,
+ul {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--- end of reset ----*/
+
+/*--- vars ---*/
+
+:root {
+    --principal: #D80073;
+    --light-principal: #FFCFE7;
+    --contrast: #fff;
+    --fonts: #9E9E9E;
+    --main-font: "Oswald", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --bold: #3B3B3B;
+    /* --shadow: rgba(0, 0, 0, 0.75); */
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+    height: 100vh;
+}
+
+.header--nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.header--nav--item a {
+    color: var(--bold);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 3em 0 0;
+    padding: 0 0.5em 1em 0.5em;
+}
+
+.header--nav--item a:hover {
+    border-bottom: 3px solid var(--principal);
+    color: var(--principal);
+}
+
+li {
+    float: left;
+}
+
+.header--nav__left {
+    border-bottom: 2px solid var(--light-principal);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 1em 1.5em;
+    width: 50%;
+}
+
+.header--nav__right {
+    padding: 0 0 1em 1.5em;
+}
+
+.header--nav__right a {
+    font-weight: initial;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+}
+
+.main--text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main--text--title {
+    font-size: 3.5em;
+}
+
+.main--text--title strong {
+    color: var(--fonts);
+}
+
+.main--text--content {
+    color: var(--fonts);
+    font-size: 2em;
+    max-width: 60%;
+}
+
+.main--text--content strong {
+    color: var(--principal);
+}
+
+.main--text--button {
+    background-color: var(--principal);
+    border: none;
+    border-radius: 0.4em;
+    color: white;
+    cursor: pointer;
+    margin: 1.5em 0;
+    padding: 0.7em 3em;
+    width: 10em;
+}
+
+.main--image {
+    display: grid;
+}
+
+.main--image img {
+    margin: auto;
+}
+
+.footer {
+    color: var(--fonts);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.3em;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .main {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main--text--content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    img {
+        margin: 3em 0;
+    }
+}

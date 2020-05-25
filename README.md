@@ -8,4 +8,4 @@ You can see the demo live, [here](https://darkmefisto9.github.io/ejercice1/index
 
 ## Image Preview
 
-![Image](preview.png)
+![Image](/preview.png)

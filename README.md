@@ -4,7 +4,7 @@ First challenge for create and practice the desing Web, it was created only with
 
 ## Demo
 
-You can see the demo live, [here](https://darkmefisto9.github.io/ejercice1/)
+You can see the demo live, [here](https://darkmefisto9.github.io/platzi-master-ejercice1/)
 
 ## Image Preview
 
